@@ -63,9 +63,10 @@ class HomeScreen extends StatelessWidget {
                 ),
               ),
       ),
-      floatingActionButton: FloatingActionButton(
+      floatingActionButton: FloatingActionButton.extended(
         onPressed: () => showSheet(context, null),
-        child: const Icon(Icons.add),
+        icon: const Icon(Icons.text_snippet_rounded),
+        label: const Text('Start chat'),
       ),
     );
   }
